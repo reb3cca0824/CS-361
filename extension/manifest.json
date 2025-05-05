@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "CS-361 Tab Organizer",
+  "description": "Auto-group, close, and name your tab groups",
+  "version": "1.0.0",
+  "permissions": [
+    "tabs",
+    "tabGroups",
+    "storage",
+    "contextMenus"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Organize Tabs",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon_small.png",
+      "48": "icons/icon_medium.png",
+      "128": "icons/icon_large.png"
+    }
+  }
+}
