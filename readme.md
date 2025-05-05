@@ -29,37 +29,43 @@ A lightweight Manifest V3 Chrome extension that helps you group, name, and close
    ```
 3. **Open Chrome’s Extensions page**:
 
-  * Go to `chrome://extensions` or click the ⋮ menu → **More Tools** → **Extensions**.
+```bash
+Go to `chrome://extensions` or click the ⋮ menu → **More Tools** → **Extensions**.
+```
 4. **Enable Developer mode**:
-
-  * Toggle the switch in the top-right corner.
+```bash
+   Toggle the switch in the top-right corner.
+```
 5. **Load unpacked extension**:
-
-  * Click **Load unpacked**, then select the `extension/` directory.
+```bash
+   Click **Load unpacked**, then select the `extension/` directory.
+```
 6. **Verify installation**:
-
-  * You should see **CS-361 Tab Organizer** listed and its icon in the toolbar.
+```bash
+You should see **CS-361 Tab Organizer** listed and its icon in the toolbar.
+```
 
 ---
 
 ## ⚙️ Usage
 
 1. **Auto-Group by Site**
-
+```
   * Click the toolbar icon → **Auto-Group by Site**.
   * Tabs cluster into groups named by hostname.
+```
 
 2. **Create Named Group**
-
+```
   * Click the toolbar icon.
   * Enter a custom group name and click **Create Named Group**.
   * Drag tabs into the new group.
-
+```
 3. **Close a Group**
-
+```
   * **Popup**: click **Close** next to any group.
   * **Context Menu**: right-click a tab → **Close all tabs in this group**.
-
+```
 ---
 
 ## 📁 Folder Structure
@@ -79,11 +85,11 @@ extension/
 ---
 
 ## 🛠 Development & Testing
-
+```
 * **Reload Extension**: go to `chrome://extensions` → click **Reload** under **CS-361 Tab Organizer**.
 * **Debug**: right-click the popup → **Inspect** to open DevTools and view `console.log()` output.
 * **Storage**: named-group titles persist in `chrome.storage.local` (inspect via DevTools → Application → Local Storage).
-
+```
 ---
 
 ## 🤝 Contributing
