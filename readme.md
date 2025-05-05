@@ -1,6 +1,6 @@
 # CS-361 Tab Organizer Chrome Extension
 
-A lightweight Manifest V3 Chrome extension that helps you group, name, and close browser tabs by topic—perfect for keeping your research or workflows organized.
+A lightweight Manifest V3 Chrome extension that helps you group, name, and close browser tabs by topic. perfect for keeping your research or workflows organized.
 
 ---
 
