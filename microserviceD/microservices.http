@@ -1,0 +1,59 @@
+### B: Auto-Group by Hostname
+POST http://localhost:3001/auto-group/hostname
+Content-Type: application/json
+
+{
+  "tabs": [
+    { "id": 1, "url": "https://github.com/reb3cca0824/CS261_microserviceB" },
+    { "id": 2, "url": "https://github.com/r259c280" },
+    { "id": 3, "url": "https://github.com/reb3cca0824" }
+  ]
+}
+
+### B: Auto-Group by Path
+POST http://localhost:3001/auto-group/path
+Content-Type: application/json
+
+{
+  "tabs": [
+    { "id": 1, "url": "https://github.com/reb3cca0824/CS261_microserviceB" },
+    { "id": 2, "url": "https://github.com/r259c280" },
+    { "id": 3, "url": "https://github.com/reb3cca0824" }
+  ]
+}
+
+### C: Create Custom Group
+POST http://localhost:3002/groups
+Content-Type: application/json
+
+{
+  "name": "Research",
+  "tabIds": [3, 7, 11]
+}
+
+### C: Delete Custom Group
+DELETE http://localhost:3002/groups/{{createdGroupId}}
+
+### D: Initialize/Rename Group
+PATCH http://localhost:3003/groups/550e8400-e29b-41d4-a716-446655440000
+Content-Type: application/json
+
+{
+  "name": "Work"
+}
+
+### D: Close Tabs in Group
+POST http://localhost:3003/groups/550e8400-e29b-41d4-a716-446655440000/close
+Content-Type: application/json
+
+{
+  "tabIds": [2, 5, 9]
+}
+
+### D: Rename Group to Afternoon
+PATCH http://localhost:3003/groups/550e8400-e29b-41d4-a716-446655440000
+Content-Type: application/json
+
+{
+  "name": "Afternoon"
+}
